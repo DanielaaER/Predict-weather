@@ -17,8 +17,8 @@ app.add_middleware(
     allow_headers=["*"])
 
 
-model = load('models/random_forest/randomforestweather.joblib')
-le_y = load('models/random_forest/le_y.joblib') 
+model = load(pathlib.Path('models/random_forest/randomforestweather.joblib'))
+le_y = load(pathlib.Path('models/random_forest/le_y.joblib'))
 
 class input(BaseModel):
     country: str="AFGANISTAN"
