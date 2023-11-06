@@ -83,5 +83,5 @@ y_pred = forest_model.predict(train_X)
 y_pred = le_y.inverse_transform(y_pred)
 print (y_pred)
 
-joblib.dump(le_y, 'le_y.joblib')
-joblib.dump(forest_model, 'randomforestweather.joblib')
+joblib.dump(le_y, 'models/random_forest/le_y.joblib')
+joblib.dump(forest_model, 'models/random_forest/randomforestweather.joblib')
