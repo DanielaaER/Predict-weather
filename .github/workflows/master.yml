@@ -20,7 +20,7 @@ jobs:
     - name: cat dataset
       run: cat data/GlobalWeatherRepository.csv
     - name: Entrenar modelo de Machine Learning
-      run: python models/random-forest/random_forest.py
+      run: python models/random_forest/random_forest.py
     - name: Constuir Imagen Docker
       run: docker build -t ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}} .
     - name: show docker images
