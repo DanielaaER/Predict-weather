@@ -46,7 +46,7 @@ import pandas as pd
 import joblib
 from sklearn.preprocessing import LabelEncoder
 
-file_path = '../../data/GlobalWeatherRepository.csv'
+file_path = 'data/GlobalWeatherRepository.csv'
 data = pd.read_csv(file_path) 
 
 data = data.dropna(axis=0)
